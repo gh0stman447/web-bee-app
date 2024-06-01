@@ -36,6 +36,7 @@ html {
   justify-content: space-between;
   padding: 8px 32px;
   padding-right: 24px;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .header__top-left {
@@ -78,6 +79,7 @@ html {
   display: flex;
   justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.02);
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .header__buttom-left-buttons {
@@ -152,15 +154,18 @@ main {
 }
 
 .avatar {
-  padding: 32px 66px;
+  padding: 32px 32px;
   background: white;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 16px;
 }
 
 .avatar img {
   border-radius: 100%;
+  width: 132px;
+  height: 132px;
 }
 
 .avatar__info {
@@ -170,6 +175,22 @@ main {
 }
 .avatar__name {
   font-size: 18px;
+}
+.avatar__position {
+  color: #8f8f8f;
+}
+.avatar__skills {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.avatar__skills li {
+  width: fit-content;
+}
+.avatar__skills-title {
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .avatar__socials {
@@ -316,4 +337,8 @@ main {
 
 .link-btn-2 {
   cursor: pointer;
+}
+
+.active {
+  background-color: #f1f1f1;
 }
